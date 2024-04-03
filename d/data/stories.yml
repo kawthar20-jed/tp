@@ -1,0 +1,54 @@
+version: "2.0"
+
+stories:
+- story: Greet and goodbye
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Weather inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather
+  - action: utter_weather
+- story: Sentiment question
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sentiment  # Nouvelle intention
+  - action: utter_sentiment  # Nouvelle réponse
+- story: Help request  # Nouvelle histoire pour la demande d'aide
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+- story: Information request  # Nouvelle histoire pour la demande d'informations
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: information  # Nouvelle intention
+  - action: utter_information  # Nouvelle réponse
+- story: Vaccine information request  # Nouvelle histoire pour les informations sur les vaccins
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: vaccine_information
+  - action: utter_vaccine_information
+
+- story: AI information request  # Nouvelle histoire pour l'intelligence artificielle
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ai_information
+  - action: utter_ai_information
+
+- story: Events information request  # Nouvelle histoire pour les événements
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: events_information
+  - action: utter_events_information

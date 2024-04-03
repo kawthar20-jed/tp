@@ -1,0 +1,53 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Bonjour
+    - Salut
+    - Coucou
+
+- intent: goodbye
+  examples: |
+    - Au revoir
+    - A plus tard
+    - Bye
+
+- intent: weather
+  examples: |
+    - Quel temps fait-il aujourd'hui ?
+    - Puis-je avoir des informations sur la météo ?
+    - Fais-moi savoir le temps actuel.
+- intent: sentiment  # Nouvelle intention
+  examples: |  # Nouveaux exemples
+    - Comment te sens-tu ?
+    - Je me sens mal.
+    - Je suis triste.
+- intent: help  # Nouvelle intention pour la demande d'aide
+  examples: |  # Nouveaux exemples
+    - Besoin d'aide
+    - Aidez-moi
+    - Je ne sais pas quoi faire
+- intent: information  # Nouvelle intention pour la demande d'informations
+  examples: |  # Nouveaux exemples
+    - Je voudrais des informations sur les vaccins
+    - Pouvez-vous me dire quelque chose sur l'intelligence artificielle ?
+    - Quels sont les derniers événements ?
+- intent: vaccine_information  # Nouvelle intention pour les informations sur les vaccins
+  examples: |
+    - Qu'est-ce qu'un vaccin ?
+    - À quoi servent les vaccins ?
+    - Comment fonctionnent les vaccins ?
+
+- intent: ai_information  # Nouvelle intention pour l'intelligence artificielle
+  examples: |
+    - Qu'est-ce que l'intelligence artificielle ?
+    - Comment fonctionne l'IA ?
+    - Quels sont les domaines de l'IA ?
+
+- intent: events_information  # Nouvelle intention pour les événements
+  examples: |
+    - Quels sont les événements à venir ?
+    - Y a-t-il des événements locaux ce week-end ?
+    - Comment trouver des événements près de chez moi ?
+    

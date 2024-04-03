@@ -1,0 +1,54 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - weather
+  - sentiment 
+  - help 
+  - information
+  - vaccine_information  # Nouvelle intention pour les informations sur les vaccins
+  - ai_information  # Nouvelle intention pour l'intelligence artificielle
+  - events_information  # Nouvelle intention pour les événements
+
+
+
+responses:
+  utter_greet:
+    - text: "Bonjour ! Comment puis-je vous aider ?"
+
+  utter_goodbye:
+    - text: "Au revoir ! À bientôt."
+
+  utter_weather:
+    - text: "Le temps est ensoleillé aujourd'hui."
+
+  utter_iamabot:
+    - text: "Oui, je suis un bot ! Comment puis-je vous aider ?"
+  utter_sentiment:
+    - text: "Je suis désolé que vous vous sentiez ainsi. Puis-je faire quelque chose pour vous aider ?"  # Nouvelle réponse
+  utter_help:  # Nouvelle réponse pour la demande d'aide
+    - text: "Je suis là pour vous aider ! Que puis-je faire pour vous ?"
+  utter_information:  # Nouvelle réponse pour la demande d'informations
+    - text: "Bien sûr, pouvez-vous me préciser sur quel sujet vous souhaitez des informations ?"
+  utter_vaccine_information:  # Nouvelle réponse pour les informations sur les vaccins
+    - text: "Les vaccins sont des substances qui stimulent le système immunitaire pour produire une réponse protectrice contre les maladies. Ils sont utilisés pour prévenir les maladies infectieuses et ont été une avancée majeure dans la santé publique."
+
+  utter_ai_information:  # Nouvelle réponse pour l'intelligence artificielle
+    - text: "L'intelligence artificielle (IA) est le domaine de l'informatique qui se concentre sur le développement de systèmes capables d'exécuter des tâches qui nécessitent généralement l'intelligence humaine. Cela inclut la reconnaissance vocale, la prise de décision, l'apprentissage automatique et bien plus encore."
+
+  utter_events_information:  # Nouvelle réponse pour les événements
+    - text: "Les derniers événements dépendent de votre région et de vos intérêts spécifiques. Je vous recommande de consulter les sites Web d'actualités ou les calendriers d'événements locaux pour les dernières informations."
+  
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_weather
+  - utter_iamabot
+  - utter_sentiment 
+  - utter_help
+  - utter_information  # Ajout de la nouvelle action
+  - action_vaccine_information
+  - action_ai_information
+  - action_events_information
+  
